@@ -1,0 +1,22 @@
+.hero-section-container {
+    min-height: 400px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.hero-description-container {
+    color: white;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+}
+
+.developer-description {
+    font-weight: normal;
+    font-style: normal;
+    color: gray;
+}
