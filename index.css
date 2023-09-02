@@ -20,3 +20,16 @@
     font-style: normal;
     color: gray;
 }
+
+.projects-heading {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.back-card {
+    margin-top: 10px;
+}
+
+.back-card > h5 {
+    font-weight: bold;
+}
