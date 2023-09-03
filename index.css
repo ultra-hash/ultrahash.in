@@ -1,5 +1,6 @@
 .hero-section-container {
     min-height: 400px;
+    padding: 40px 0;
 }
 
 .profile-image {
@@ -19,6 +20,7 @@
     font-weight: normal;
     font-style: normal;
     color: gray;
+    max-width: 455px;
 }
 
 .section-heading-container {
@@ -39,4 +41,40 @@
 
 .back-card > h5 {
     font-weight: bold;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-container > button {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid grey;
+    border-radius: 0 0 5px 5px;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.skills-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icons-container, .social-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon > p {
+    padding: 0;
+    margin: 0;
 }
