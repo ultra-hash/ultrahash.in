@@ -21,6 +21,13 @@
     color: gray;
 }
 
+.section-heading-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+
 .projects-heading {
     font-weight: bold;
     margin: 20px 0;
