@@ -1,107 +1,59 @@
-.hero-section-container {
-    min-height: 400px;
-    padding: 40px 0;
-    gap: 40px;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&family=Overpass:wght@400;700&family=Poppins:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  font-family: "Open Sans";
 }
 
-.profile-image {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    mix-blend-mode: luminosity;
+#skills-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-.hero-description-container {
-    color: white;
-    font-weight: bold;
-    font-style: oblique;
-    text-align: center;
-}
-
-.developer-description {
-    font-weight: normal;
-    font-style: normal;
-    color: gray;
-    max-width: 550px;
-}
-
-.section-heading-container {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-}
-
-
-.section-heading-container > h2 {
-    font-weight: bold;
-    margin: 20px 0;
-}
-
-.back-card {
-    margin-top: 10px;
-}
-
-.back-card > h5 {
-    font-weight: bold;
-}
-
-.category-container {
+@media (max-width: 768px) {
+  .skills-cards-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
-}
-
-.category-container > button {
-    outline: none;
-    border: 0;
-    border-bottom: 2px solid grey;
-    border-radius: 0 0 5px 5px;
-    padding: 10px 20px;
-    font-size: 12px;
-}
-
-.skills-container {
     padding: 10px;
+  }
+
+  .skills-card {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #skills-section {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    /* justify-content: center; */
     justify-content: space-evenly;
-}
+    gap: 30px;
+  }
 
-.social-icons-container, .social-icon {
-    gap: 10px;
-}
+  #skills-section > div:first-child {
+    width: 20%;
+    flex-shrink: 1;
+  }
 
-.social-icon > p {
-    padding: 0;
-    margin: 0;
-}
+  #skills-section > div:last-child {
+    width: 80%;
+    flex-shrink: 1;
+  }
 
-.custom-fixed-bottom-arrow {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
+  .skills-heading-container {
+    min-width: 180px;
+  }
 
-a[target="_blank"]:link {
-    color: black;
-    text-decoration: none;
-}
+  .skills-cards-container {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+  }
 
-a[target="_blank"]:visited {
-    color: black;
-    text-decoration: none;
-}
-
-.showMoreButton {
-    outline: none;
-    border: 0;
-    background-color: aquamarine;
-    color: black;
-    border-radius: 10px;
-    padding: 5px;
-    font-weight: bold;
+  .skills-card {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
 }
