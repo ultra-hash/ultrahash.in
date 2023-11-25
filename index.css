@@ -50,6 +50,16 @@
 
 .section-title {
   color: #007bff;
+  letter-spacing: 1px;
+}
+
+#background .section-content > p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.bold-word {
+  font-weight: 700;
 }
 
 .skills {
