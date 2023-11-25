@@ -1,107 +1,189 @@
-.hero-section-container {
-    min-height: 400px;
-    padding: 40px 0;
-    gap: 40px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900&display=swap");
+* {
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  font-family: "Poppins";
 }
 
-.profile-image {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    mix-blend-mode: luminosity;
+.external-link {
+  color: black;
+  text-decoration: none;
 }
 
-.hero-description-container {
-    color: white;
-    font-weight: bold;
-    font-style: oblique;
-    text-align: center;
+#hero {
+  max-width: 800px;
+  height: 100vh;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.developer-description {
-    font-weight: normal;
-    font-style: normal;
-    color: gray;
-    max-width: 550px;
+.hello {
+  margin: 0;
+  font-size: 50px;
 }
 
-.section-heading-container {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
+.intro {
+  font-size: 20px;
+  max-width: 600px;
 }
 
-
-.section-heading-container > h2 {
-    font-weight: bold;
-    margin: 20px 0;
+.getintouch {
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.back-card {
-    margin-top: 10px;
+.getintouch .external-link {
+  text-underline-offset: 5px;
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+  text-decoration-thickness: 2px;
 }
 
-.back-card > h5 {
-    font-weight: bold;
+.section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
 
-.category-container {
+.section-title {
+  color: #007bff;
+  letter-spacing: 1px;
+}
+
+#background .section-content > p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.bold-word {
+  font-weight: 700;
+}
+
+.skills {
+  flex: 1;
+}
+
+.skills-category {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.skills-list > li {
+  margin: 2px 0;
+}
+
+.project-title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.project-title > span {
+  color: #007bff;
+}
+
+.project-title:hover > span {
+  position: relative;
+  left: 8px;
+}
+
+.project-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.project-tags {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.project-tags > li {
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+#footer {
+  font-weight: 500;
+}
+
+#footer > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: 1.2px;
+}
+
+#footer > ul > li > a {
+  color: #007bff;
+}
+
+/* small devices */
+@media (max-width: 767px) {
+  .section-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+  }
+
+  .skills {
     gap: 20px;
-}
-
-.category-container > button {
-    outline: none;
-    border: 0;
-    border-bottom: 2px solid grey;
-    border-radius: 0 0 5px 5px;
-    padding: 10px 20px;
-    font-size: 12px;
-}
-
-.skills-container {
     padding: 10px;
+  }
+
+  #footer {
+    text-align: center;
+  }
+
+  #footer > ul:nth-child(2) {
+    display: none;
+  }
+}
+
+/* medium and above device */
+@media (min-width: 768px) {
+  .section {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    /* justify-content: center; */
     justify-content: space-evenly;
-}
+    gap: 30px;
+  }
 
-.social-icons-container, .social-icon {
-    gap: 10px;
-}
+  .section-title {
+    text-align: right;
+    width: 20%;
+  }
 
-.social-icon > p {
-    padding: 0;
-    margin: 0;
-}
+  .section-content {
+    width: 80%;
+    display: flex;
+  }
 
-.custom-fixed-bottom-arrow {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
+  #other-projects > .section-content {
+    display: block;
+  }
 
-a[target="_blank"]:link {
-    color: black;
-    text-decoration: none;
-}
-
-a[target="_blank"]:visited {
-    color: black;
-    text-decoration: none;
-}
-
-.showMoreButton {
-    outline: none;
-    border: 0;
-    background-color: aquamarine;
-    color: black;
-    border-radius: 10px;
-    padding: 5px;
-    font-weight: bold;
+  #footer > ul:last-child {
+    display: none;
+  }
 }
