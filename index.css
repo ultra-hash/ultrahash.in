@@ -5,6 +5,43 @@
   font-family: "Poppins";
 }
 
+.external-link {
+  color: black;
+  text-decoration: none;
+}
+
+#hero {
+  max-width: 800px;
+  height: 100vh;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hello {
+  margin: 0;
+  font-size: 50px;
+}
+
+.intro {
+  font-size: 20px;
+  max-width: 600px;
+}
+
+.getintouch {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.getintouch .external-link {
+  text-underline-offset: 5px;
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+  text-decoration-thickness: 2px;
+}
+
 .section {
   max-width: 800px;
   margin: auto;
@@ -34,11 +71,6 @@
 
 .skills-list > li {
   margin: 2px 0;
-}
-
-.external-link {
-  color: black;
-  text-decoration: none;
 }
 
 .project-title {
