@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,900&display=swap");
 * {
   box-sizing: border-box;
   /* border: 1px solid green; */
@@ -34,6 +34,39 @@
   margin: 5px 0;
 }
 
+.external-link {
+  color: black;
+  text-decoration: none;
+}
+
+.project-title > span {
+  color: #007bff;
+}
+
+.project-title:hover > span {
+  position: relative;
+  left: 8px;
+}
+
+.project-desc {
+  font-weight: 400;
+}
+
+.project-tags {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.project-tags > li {
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 0 5px;
+}
+
+/* small devices */
 @media (max-width: 768px) {
   .section-content {
     display: flex;
@@ -46,6 +79,7 @@
   }
 }
 
+/* medium and above device */
 @media (min-width: 768px) {
   .section {
     display: flex;
@@ -62,4 +96,14 @@
     width: 80%;
     display: flex;
   }
+
+  #other-projects > .section-content {
+    display: block;
+  }
+}
+
+/* Override Everything */
+
+.display-block {
+  display: block;
 }
