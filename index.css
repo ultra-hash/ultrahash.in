@@ -11,13 +11,51 @@
 }
 
 #hero {
+  position: relative;
   max-width: 800px;
-  height: 100vh;
   margin: auto;
+  height: 100vh;
   padding: 20px;
+}
+
+#hero > .section-content {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.theme-section {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+#toggleThemeBg {
+  position: relative;
+  background-color: black;
+  width: 50px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#toggleThemeCircle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#toggleThemeBtn {
+  display: none;
 }
 
 .hello {
@@ -51,6 +89,10 @@
 .section-title {
   color: #007bff;
   letter-spacing: 1px;
+}
+
+#background .section-content {
+  display: block;
 }
 
 #background .section-content > p {

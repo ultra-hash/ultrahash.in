@@ -12,22 +12,32 @@
   </head>
   <body>
     <div id="hero">
-      <p class="hello">Hello! 👋🏽</p>
+      <div class="theme-section">
+        <i class="bi bi-brightness-high-fill"></i>
+        <div id="toggleThemeBg">
+          <label id="toggleThemeCircle" for="toggleThemeBtn"></label>
+          <input type="checkbox" id="toggleThemeBtn" onchange="toggleTheme()" />
+        </div>
+        <i class="bi bi-moon-stars-fill"></i>
+      </div>
+      <div class="section-content">
+        <p class="hello">Hello! 👋🏽</p>
 
-      <p class="intro">
-        I'm <b>Veerabhadra Swamy</b>, a self taught python developer and school
-        taguht MERN Stack developer focused on building API's, backend services
-        & beautiful interfaces. <br />👨🏽‍💻
-      </p>
+        <p class="intro">
+          I'm <b>Veerabhadra Swamy</b>, a self taught python developer and
+          school taguht MERN Stack developer focused on building API's, backend
+          services & beautiful interfaces. <br />👨🏽‍💻
+        </p>
 
-      <p class="getintouch">
-        Get in touch 👉
-        <span
-          ><a class="external-link" href="mailto:p.uvswamy@gmail.com"
-            >p.uvswamy@gmail.com</a
-          ></span
-        >
-      </p>
+        <p class="getintouch">
+          Get in touch 👉
+          <span
+            ><a class="external-link" href="mailto:p.uvswamy@gmail.com"
+              >p.uvswamy@gmail.com</a
+            ></span
+          >
+        </p>
+      </div>
     </div>
 
     <div class="section" id="background">
@@ -47,7 +57,18 @@
             proficiency in building robust full-stack applications.
           </span>
         </p>
-        <p></p>
+        <p>
+          As a passinate developer, I'm not confined to any particular stack or
+          tools, as long as I have the opportunity to work on something cool.
+        </p>
+        <p>
+          <span class="bold-word">
+            When I'm not in front of a computer screen.
+          </span>
+          I'm probably solving chess puzzles, chores, sleeping. Lately, I'm
+          working on incorporating a habit of reading books (The Full Stack
+          Developer & Rick Dad Poor Dad) into my routine.
+        </p>
       </div>
     </div>
 
@@ -218,5 +239,37 @@
         </li>
       </ul>
     </div>
+
+    <script type="text/JavaScript">
+      const themeBtn = document.getElementById("toggleThemeBtn")
+      const body = document.getElementsByTagName('body')[0]
+      const externalLinks = document.getElementsByClassName('external-link')
+      const themeBg = document.getElementById('toggleThemeBg')
+      const circle = document.getElementById('toggleThemeCircle')
+      function toggleTheme() {
+        if (themeBtn.checked) {
+          body.style.backgroundColor = "#0f172a";
+          body.style.color = "#ccddee";
+          for (eachElement of externalLinks) {
+            eachElement.style.color = "#aaccee"
+          }
+          themeBg.style.backgroundColor = "white";
+          themeBg.style.borderColor = "white";
+          circle.style.backgroundColor = "black";
+          themeBg.style.alignItems = "flex-end";
+        } else {
+          body.style.backgroundColor = "white";
+          body.style.color = "black";
+          for (eachElement of externalLinks) {
+            eachElement.style.color = "black";
+          };
+          themeBg.style.backgroundColor = "black";
+          themeBg.style.borderColor = "black";
+          circle.style.backgroundColor = "white";
+          themeBg.style.alignItems = "flex-start";
+
+        }
+      }
+    </script>
   </body>
 </html>
