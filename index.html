@@ -116,6 +116,89 @@
       </div>
     </div>
 
+    <div class="section" id="featured-projects">
+      <h3 class="section-title">FEATURED PROJECTS</h3>
+      <div class="section-content">
+        <div class="project-card">
+          <a
+            href="https://uvswamynxttrend.ccbp.tech/"
+            class="external-link"
+            target="_blank"
+          >
+            <img
+              class="featured-project-image"
+              src="./images/gifs/nxtTrends-light.gif"
+              alt="nxtTrends"
+            />
+          </a>
+          <div class="project-details">
+            <a
+              href="https://uvswamynxttrend.ccbp.tech/"
+              class="external-link"
+              target="_blank"
+            >
+              <h4 class="project-title">NxtTrends</h4>
+            </a>
+            <p class="project-desc">
+              A modern e-commerce experience with a design inspired by Amazon
+              and Flipkart
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <a
+            href="https://uvswamynxtwatch.ccbp.tech/"
+            class="external-link"
+            target="_blank"
+          >
+            <img
+              class="featured-project-image"
+              src="./images/gifs/nxtwatch-light.gif"
+              alt="nxtWatch"
+            />
+          </a>
+          <div class="project-details">
+            <a
+              href="https://uvswamynxtwatch.ccbp.tech/"
+              class="external-link"
+              target="_blank"
+            >
+              <h4 class="project-title">NxtWatch</h4>
+            </a>
+            <p class="project-desc">
+              A clone of YouTube where users can log in and can see a list of
+              videos and can can toggle the theme (Light/Dark)
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <a
+            href="https://uvswamybookhub.ccbp.tech/"
+            class="external-link"
+            target="_blank"
+          >
+            <img
+              class="featured-project-image"
+              src="./images/gifs/goodreads-light.gif"
+              alt="goodreads"
+            />
+          </a>
+          <div class="project-details">
+            <a
+              href="https://uvswamybookhub.ccbp.tech/"
+              class="external-link"
+              target="_blank"
+            >
+              <h4 class="project-title">Goodreads</h4>
+            </a>
+            <p class="project-desc">
+              A comprehensive book management platform, inspired by Goodreads.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="section" id="other-projects">
       <h3 class="section-title">OTHER PROJECTS</h3>
       <div class="section-content">
@@ -283,8 +366,23 @@
       const themeBtn = document.getElementById("toggleThemeBtn")
       const body = document.getElementsByTagName('body')[0]
       const externalLinks = document.getElementsByClassName('external-link')
+      const images = document.getElementsByClassName("featured-project-image")
       const themeBg = document.getElementById('toggleThemeBg')
       const circle = document.getElementById('toggleThemeCircle')
+
+
+      function toggleImages() {
+        for (eachElement of images) {
+          if (themeBtn.checked){
+            eachElement.src = eachElement.src.replace('-light', '-dark')
+          } else {
+            eachElement.src = eachElement.src.replace('-dark','-light')
+          }
+        }
+
+      }
+
+
       function toggleTheme() {
         if (themeBtn.checked) {
           body.style.backgroundColor = "#0f172a";
@@ -308,6 +406,7 @@
           themeBg.style.alignItems = "flex-start";
 
         }
+        toggleImages()
       }
     </script>
   </body>
