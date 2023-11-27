@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio - veerabhadra swamy uppu</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
@@ -12,22 +12,32 @@
   </head>
   <body>
     <div id="hero">
-      <p class="hello">Hello! 👋🏽</p>
+      <div class="theme-section">
+        <i class="bi bi-brightness-high-fill"></i>
+        <div id="toggleThemeBg">
+          <label id="toggleThemeCircle" for="toggleThemeBtn"></label>
+          <input type="checkbox" id="toggleThemeBtn" onchange="toggleTheme()" />
+        </div>
+        <i class="bi bi-moon-stars-fill"></i>
+      </div>
+      <div class="section-content">
+        <p class="hello">Hello! 👋🏽</p>
 
-      <p class="intro">
-        I'm <b>Veerabhadra Swamy</b>, a self taught python developer and school
-        taguht MERN Stack developer focused on building API's, backend services
-        & beautiful interfaces. <br />👨🏽‍💻
-      </p>
+        <p class="intro">
+          I'm <b>Veerabhadra Swamy</b>, a self taught python developer and
+          school taguht MERN Stack developer focused on building API's, backend
+          services & beautiful interfaces. <br />👨🏽‍💻
+        </p>
 
-      <p class="getintouch">
-        Get in touch 👉
-        <span
-          ><a class="external-link" href="mailto:p.uvswamy@gmail.com"
-            >p.uvswamy@gmail.com</a
-          ></span
-        >
-      </p>
+        <p class="getintouch">
+          Get in touch 👉
+          <span
+            ><a class="external-link" href="mailto:p.uvswamy@gmail.com"
+              >p.uvswamy@gmail.com</a
+            ></span
+          >
+        </p>
+      </div>
     </div>
 
     <div class="section" id="background">
@@ -47,7 +57,18 @@
             proficiency in building robust full-stack applications.
           </span>
         </p>
-        <p></p>
+        <p>
+          As a passinate developer, I'm not confined to any particular stack or
+          tools, as long as I have the opportunity to work on something cool.
+        </p>
+        <p>
+          <span class="bold-word">
+            When I'm not in front of a computer screen.
+          </span>
+          I'm probably solving chess puzzles, chores, sleeping. Lately, I'm
+          working on incorporating a habit of reading books (The Full Stack
+          Developer & Rick Dad Poor Dad) into my routine.
+        </p>
       </div>
     </div>
 
@@ -91,6 +112,89 @@
             <li>Linux</li>
             <li>Nginx</li>
           </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="featured-projects">
+      <h3 class="section-title">FEATURED PROJECTS</h3>
+      <div class="section-content">
+        <div class="project-card">
+          <a
+            href="https://uvswamynxttrend.ccbp.tech/"
+            class="external-link"
+            target="_blank"
+          >
+            <img
+              class="featured-project-image"
+              src="./images/gifs/nxtTrends-light.gif"
+              alt="nxtTrends"
+            />
+          </a>
+          <div class="project-details">
+            <a
+              href="https://uvswamynxttrend.ccbp.tech/"
+              class="external-link"
+              target="_blank"
+            >
+              <h4 class="project-title">NxtTrends</h4>
+            </a>
+            <p class="project-desc">
+              A modern e-commerce experience with a design inspired by Amazon
+              and Flipkart
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <a
+            href="https://uvswamynxtwatch.ccbp.tech/"
+            class="external-link"
+            target="_blank"
+          >
+            <img
+              class="featured-project-image"
+              src="./images/gifs/nxtwatch-light.gif"
+              alt="nxtWatch"
+            />
+          </a>
+          <div class="project-details">
+            <a
+              href="https://uvswamynxtwatch.ccbp.tech/"
+              class="external-link"
+              target="_blank"
+            >
+              <h4 class="project-title">NxtWatch</h4>
+            </a>
+            <p class="project-desc">
+              A clone of YouTube where users can log in and can see a list of
+              videos and can can toggle the theme (Light/Dark)
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <a
+            href="https://uvswamybookhub.ccbp.tech/"
+            class="external-link"
+            target="_blank"
+          >
+            <img
+              class="featured-project-image"
+              src="./images/gifs/goodreads-light.gif"
+              alt="goodreads"
+            />
+          </a>
+          <div class="project-details">
+            <a
+              href="https://uvswamybookhub.ccbp.tech/"
+              class="external-link"
+              target="_blank"
+            >
+              <h4 class="project-title">Goodreads</h4>
+            </a>
+            <p class="project-desc">
+              A comprehensive book management platform, inspired by Goodreads.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -183,6 +287,15 @@
         </li>
         <li>
           <a
+            href="https://codepen.io/ultrahash/"
+            class="external-link"
+            target="_blank"
+          >
+            CODEPEN
+          </a>
+        </li>
+        <li>
+          <a
             href="https://www.linkedin.com/in/veerabhadra-swamy-uppu/"
             class="external-link"
             target="_blank"
@@ -209,6 +322,36 @@
         </li>
         <li>
           <a
+            href="https://codepen.io/ultrahash/"
+            class="external-link"
+            target="_blank"
+          >
+            <span
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #00fbff;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20"
+                height="20"
+                viewBox="0 0 50 50"
+                fill="#007bff"
+              >
+                <path
+                  d="M 25 4 L 4 17.34375 L 4 32.652344 L 25 46 L 46 32.65625 L 46 17.34375 Z M 25 29.183594 L 19.066406 25.070313 L 25 21.023438 L 30.933594 25.070313 Z M 27 17.605469 L 27 9.949219 L 40.429688 18.484375 L 34.410156 22.65625 Z M 23 17.605469 L 15.589844 22.65625 L 9.570313 18.484375 L 23 9.949219 Z M 12.09375 25.042969 L 8 27.832031 L 8 22.203125 Z M 15.570313 27.453125 L 23 32.605469 L 23 40.050781 L 9.589844 31.527344 Z M 27 32.605469 L 34.429688 27.453125 L 40.410156 31.527344 L 27 40.050781 Z M 37.90625 25.042969 L 42 22.203125 L 42 27.832031 Z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
             href="https://www.linkedin.com/in/veerabhadra-swamy-uppu/"
             class="external-link"
             target="_blank"
@@ -218,5 +361,53 @@
         </li>
       </ul>
     </div>
+
+    <script type="text/JavaScript">
+      const themeBtn = document.getElementById("toggleThemeBtn")
+      const body = document.getElementsByTagName('body')[0]
+      const externalLinks = document.getElementsByClassName('external-link')
+      const images = document.getElementsByClassName("featured-project-image")
+      const themeBg = document.getElementById('toggleThemeBg')
+      const circle = document.getElementById('toggleThemeCircle')
+
+
+      function toggleImages() {
+        for (eachElement of images) {
+          if (themeBtn.checked){
+            eachElement.src = eachElement.src.replace('-light', '-dark')
+          } else {
+            eachElement.src = eachElement.src.replace('-dark','-light')
+          }
+        }
+
+      }
+
+
+      function toggleTheme() {
+        if (themeBtn.checked) {
+          body.style.backgroundColor = "#0f172a";
+          body.style.color = "#cccccc";
+          for (eachElement of externalLinks) {
+            eachElement.style.color = "#dddddd"
+          }
+          themeBg.style.backgroundColor = "white";
+          themeBg.style.borderColor = "white";
+          circle.style.backgroundColor = "#0f172a";
+          themeBg.style.alignItems = "flex-end";
+        } else {
+          body.style.backgroundColor = "white";
+          body.style.color = "#1c1c1c";
+          for (eachElement of externalLinks) {
+            eachElement.style.color = "#1a1a1a";
+          };
+          themeBg.style.backgroundColor = "grey";
+          themeBg.style.borderColor = "grey";
+          circle.style.backgroundColor = "white";
+          themeBg.style.alignItems = "flex-start";
+
+        }
+        toggleImages()
+      }
+    </script>
   </body>
 </html>
