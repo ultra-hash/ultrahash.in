@@ -175,6 +175,10 @@ body {
   border-radius: 5px;
 }
 
+#badges .section-content {
+  justify-content: space-around;
+}
+
 #footer {
   font-weight: 500;
 }
