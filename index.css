@@ -176,7 +176,8 @@ body {
 }
 
 #badges .section-content {
-  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 #footer {

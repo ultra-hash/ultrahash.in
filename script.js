@@ -21,7 +21,7 @@ function toggleTheme() {
     if (themeBtn.checked) {
         body.style.backgroundColor = "#0f172a";
         body.style.color = "#cccccc";
-        for (eachElement of externalLinks) {
+        for (let eachElement of externalLinks) {
             eachElement.style.color = "#dddddd"
         }
         themeBg.style.backgroundColor = "white";
@@ -32,7 +32,7 @@ function toggleTheme() {
     } else {
         body.style.backgroundColor = "white";
         body.style.color = "#1c1c1c";
-        for (eachElement of externalLinks) {
+        for (let eachElement of externalLinks) {
             eachElement.style.color = "#1a1a1a";
         };
         themeBg.style.backgroundColor = "grey";
