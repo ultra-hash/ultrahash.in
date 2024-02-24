@@ -1,0 +1,47 @@
+{
+  "other_projects": [
+    {
+      "project_id": 1,
+      "title": "Jobby",
+      "description": "Developed a job portal application, Users can log in to access job posts, and filters can be applied to retrieve specific job data. The app provides a seamless user experience, allowing for efficient job searching and customization.Leveraged React class components to ensure a modular and organized structure, enhancing maintainability and scalability.",
+      "techonologies": ["html", "css", "javascript", "react"],
+      "tags": [
+        "React",
+        "React-router-dom",
+        "Authentication",
+        "RestFul-API's",
+        "Class components",
+        "JSX",
+        "State Management"
+      ]
+    },
+    {
+      "project_id": 2,
+      "title": "NxtSlides",
+      "description": "Designed a React-based slide app with a two section layout. The left section features slide previews, dynamically updating based on changes in the active large slide. Utilized class components for effective state management, allowing users to seamlessly add new slides and maintain synchronization between the active slide and previews.",
+      "techonologies": ["html", "css", "javascript", "react"],
+      "tags": ["React", "Class components", "State Management", "JSX", "CSS"]
+    },
+    {
+      "project_id": 3,
+      "title": "Match Game",
+      "description": "Developed a React-based image matching game featuring three categories: fruits, animals, and places. Users engage with large and small images, selecting the correct one within the specified category to score high under 60 seconds.",
+      "techonologies": ["html", "css", "javascript", "react"],
+      "tags": [
+        "React",
+        "Class components",
+        "State Management",
+        "CSS",
+        "Flex-Box",
+        "JSX"
+      ]
+    },
+    {
+      "project_id": 4,
+      "title": "",
+      "description": "",
+      "techonologies": [],
+      "tags": []
+    }
+  ]
+}

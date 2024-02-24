@@ -1,0 +1,16 @@
+.product-card {
+  min-height: 400px;
+  min-width: 200px;
+  display: flex;
+}
+
+.product-card > .imageHolder {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card > .testHolder {
+  flex: 1;
+}
