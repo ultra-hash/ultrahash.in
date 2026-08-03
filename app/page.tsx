@@ -1,12 +1,12 @@
 import Image from "next/image";
 import ThemeToggle from "@/components/theme-toggle";
+import CredlyBadges from "@/components/credly-badges";
 import {
   skills,
   featuredProjects,
   otherProjects,
   experience,
   highlights,
-  badges,
   social,
 } from "@/lib/data";
 
@@ -258,18 +258,7 @@ export default function Home() {
 
         <section id="badges" className="section">
           <h3 className="section-title">BADGES EARNED</h3>
-          <div className="section-content badges-row">
-            {badges.map((id) => (
-              <div
-                key={id}
-                data-iframe-width="150"
-                data-iframe-height="270"
-                data-share-badge-id={id}
-                data-share-badge-host="https://www.credly.com"
-                className="badge"
-              />
-            ))}
-          </div>
+          <CredlyBadges />
         </section>
       </main>
 
@@ -332,11 +321,6 @@ export default function Home() {
           </li>
         </ul>
       </footer>
-
-      <script
-        async
-        src="//cdn.credly.com/assets/utilities/embed.js"
-      ></script>
     </>
   );
 }
