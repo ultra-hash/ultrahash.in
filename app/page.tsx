@@ -73,7 +73,9 @@ export default function Home() {
                 {item.location && (
                   <p className="experience-location">{item.location}</p>
                 )}
-                <p className="experience-desc">{item.description}</p>
+                {item.description && (
+                  <p className="experience-desc">{item.description}</p>
+                )}
                 <ul className="experience-list">
                   {item.points.map((point) => (
                     <li key={point}>{point}</li>

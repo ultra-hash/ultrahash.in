@@ -16,7 +16,7 @@ export type Experience = {
   period: string;
   location?: string;
   employment?: string;
-  description: string;
+  description?: string;
   points: string[];
   tags: string[];
 };
@@ -174,7 +174,7 @@ export const experience: Experience[] = [
     points: [
       "Partnered directly with the CEO/CTO to translate business strategy into technical roadmaps, define implementation plans, decompose complex initiatives into actionable workstreams, and lead execution by delegating work across support engineers through successful project delivery.",
       "Engineered and delivered customer-specific PTC Windchill customizations—including workflows, soft types, OIRs, lifecycle templates, and configuration-driven business rules—to align enterprise PLM processes with customer requirements, streamline engineering workflows, and improve operational efficiency.",
-      "Owned the end-to-end architecture, implementation, and production rollout of Continuous Integration (CI) and on-demand delivery pipelines for Windchill customizations using Jenkins and Nexus, automating build, artifact management, and release workflows. Standardized and successfully deployed the solution across four enterprise customer implementations, improving release efficiency, deployment consistency, and end-to-end release traceability.",
+      "Owned the end-to-end architecture, implementation, and production rollout of Continuous Integration (CI) and on-demand delivery pipelines for Windchill customizations using Jenkins and Nexus. Standardized build, artifact management, and release workflows across four enterprise customer implementations, reducing build preparation time by approximately 4 hours per release (up to 6 hours for complex builds), while improving deployment consistency, release traceability, and reducing manual errors.",
       "Designed and implemented a SQL-driven ETVL (Extract, Transform, Validate, and Load) framework supporting the migration of over 7 million PLM objects, automating data extraction, transformation, validation, loader-ready dataset generation, and integration with Windchill out-of-the-box and custom loaders. Reduced migration dataset evaluation time from hours to minutes (~95%), improved data integrity by eliminating spreadsheet-induced inconsistencies, and established a repeatable, scalable migration workflow.",
       "Designed and delivered internal automation platforms and business-critical integrations that transformed operational workflows, enabling real-time data visibility, compliance monitoring, and executive reporting. Automated cross-system validation and reporting processes, replacing manual weekend audits with continuous daily visibility. Eliminated recurring third-party subscription costs, reduced redundant cross-system updates by ~2 hours per employee per week, and saved management an additional ~2 hours weekly in report consolidation and decision support.",
       "Installed, configured, and supported enterprise PTC Windchill environments, performing CPS upgrades, rehosting, Remote File Server configuration, and CAD worker integration (Creo, SolidWorks, Inventor, and Document Worker), while diagnosing and resolving complex platform issues.",
@@ -185,8 +185,7 @@ export const experience: Experience[] = [
     role: "PLM Trainee L1",
     company: "Datafrond",
     period: "Mar 2024 - Aug 2024",
-    description:
-      "Built a strong foundation in product lifecycle management and Windchill, while contributing to operations and customer support.",
+    location: "Hyderabad, Telangana, India · Remote",
     points: [
       "Designed and implemented a proof of concept (PoC) to automate the build and on-demand delivery of Windchill customizations, validating the feasibility of replacing manual release processes with a repeatable CI workflow.",
       "Successfully deployed a complete customer QA environment by installing and configuring PTC Windchill and its supporting components under technical guidance, gaining hands-on experience in enterprise PLM implementations.",
