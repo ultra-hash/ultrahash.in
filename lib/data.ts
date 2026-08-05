@@ -170,12 +170,12 @@ export const experience: Experience[] = [
     location: "Hyderabad, Telangana, India · Remote",
     employment: "Full-time",
     description:
-      "Evaluate and implement new technologies while owning multiple projects end-to-end — from technical planning and stakeholder communication to execution tracking and release management.",
+      "Worked across enterprise PLM implementations, internal product development, automation, and DevOps initiatives, partnering with executive leadership to deliver customer-facing and internal engineering solutions.",
     points: [
       "Partnered directly with the CEO/CTO to translate business strategy into technical roadmaps, define implementation plans, decompose complex initiatives into actionable workstreams, and lead execution by delegating work across support engineers through successful project delivery.",
       "Engineered and delivered customer-specific PTC Windchill customizations—including workflows, soft types, OIRs, lifecycle templates, and configuration-driven business rules—to align enterprise PLM processes with customer requirements, streamline engineering workflows, and improve operational efficiency.",
-      "Owned the end-to-end architecture, implementation, and production delivery of automated Windchill CI/CD pipelines using Jenkins and Nexus, automating build, artifact management, and deployment processes. Standardized and successfully deployed the solution across four enterprise customer implementations, improving release efficiency, deployment consistency, and end-to-end release traceability.",
-      "Developed Python and SQL automation for ETVL (Extract, Transform, Validate, and Load) activities supporting enterprise PLM migrations to PTC Windchill, while leveraging and extending out-of-the-box data loaders with custom loading capabilities to streamline migration workflows, improve data quality, and reduce dataset evaluation time from hours to minutes (~95%).",
+      "Owned the end-to-end architecture, implementation, and production rollout of Continuous Integration (CI) and on-demand delivery pipelines for Windchill customizations using Jenkins and Nexus, automating build, artifact management, and release workflows. Standardized and successfully deployed the solution across four enterprise customer implementations, improving release efficiency, deployment consistency, and end-to-end release traceability.",
+      "Designed and implemented a SQL-driven ETVL (Extract, Transform, Validate, and Load) framework supporting the migration of over 7 million PLM objects, automating data extraction, transformation, validation, loader-ready dataset generation, and integration with Windchill out-of-the-box and custom loaders. Reduced migration dataset evaluation time from hours to minutes (~95%), improved data integrity by eliminating spreadsheet-induced inconsistencies, and established a repeatable, scalable migration workflow.",
       "Designed and delivered internal automation platforms and business-critical integrations that transformed operational workflows, enabling real-time data visibility, compliance monitoring, and executive reporting. Automated cross-system validation and reporting processes, replacing manual weekend audits with continuous daily visibility. Eliminated recurring third-party subscription costs, reduced redundant cross-system updates by ~2 hours per employee per week, and saved management an additional ~2 hours weekly in report consolidation and decision support.",
       "Installed, configured, and supported enterprise PTC Windchill environments, performing CPS upgrades, rehosting, Remote File Server configuration, and CAD worker integration (Creo, SolidWorks, Inventor, and Document Worker), while diagnosing and resolving complex platform issues.",
     ],
@@ -188,10 +188,11 @@ export const experience: Experience[] = [
     description:
       "Built a strong foundation in product lifecycle management and Windchill, while contributing to operations and customer support.",
     points: [
-      "Learned Windchill and deepened understanding of product lifecycle management",
-      "Resolved customer queries and problems related to Windchill with high satisfaction",
-      "Performed weekly Windchill monitoring to maintain system integrity and performance",
-      "Developed automated Windchill builds, deployments, and installations for efficient operations",
+      "Designed and implemented a proof of concept (PoC) to automate the build and on-demand delivery of Windchill customizations, validating the feasibility of replacing manual release processes with a repeatable CI workflow.",
+      "Successfully deployed a complete customer QA environment by installing and configuring PTC Windchill and its supporting components under technical guidance, gaining hands-on experience in enterprise PLM implementations.",
+      "Initiated automation for enterprise PLM migration activities by developing Python tooling for migration dataset validation and loader dataset preparation, replacing manual validation with a repeatable workflow.",
+      "Provided L1 technical support by diagnosing and resolving customer-reported Windchill issues while assisting with platform administration, operational monitoring, and routine system maintenance.",
+      "Configured and supported core PTC Windchill PLM capabilities, including Object Initialization Rules (OIRs), soft types, custom attributes, and enterprise administration, building a strong foundation in enterprise PLM implementations.",
     ],
     tags: ["Windchill", "Python", "Jenkins", "Automation"],
   },
