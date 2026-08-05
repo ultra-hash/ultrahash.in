@@ -106,7 +106,7 @@ export default function Home() {
         </section>
 
         <section id="skills" className="section">
-          <h3 className="section-title">SKILLS</h3>
+          <h3 className="section-title">TECHNOLOGIES &amp; TOOLS</h3>
           <div className="section-content">
             {Object.entries(skills).map(([category, items]) => (
               <div className="skills" key={category}>
