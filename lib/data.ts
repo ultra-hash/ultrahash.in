@@ -172,16 +172,12 @@ export const experience: Experience[] = [
     description:
       "Evaluate and implement new technologies while owning multiple projects end-to-end — from technical planning and stakeholder communication to execution tracking and release management.",
     points: [
-      "Evaluate and implement new technologies to enhance development, operations, and system integration capabilities",
-      "Own multiple projects — technical planning, stakeholder communication, execution tracking, and release management",
-      "Define project roadmaps, break down work, and coordinate task execution across team members",
-      "Collaborate with management and stakeholders to align technical solutions with business objectives",
-      "Contribute to the customization of Windchill — developing workflows, soft types, OIRs, templates, and more",
-      "Architected and implemented automated Windchill CI/CD pipelines using Jenkins and Nexus, owned from concept to production deployment",
-      "Automated build, artifact management, and deployment workflows for better release efficiency, consistency, and traceability",
-      "Developed Python and SQL scripts for data migration (ETL)",
-      "Built internal tools and integrations to streamline operations and meet stakeholder requirements",
-      "Install, maintain, and troubleshoot Windchill environments; resolve customer queries while keeping services running smoothly",
+      "Partnered directly with the CEO/CTO to translate business strategy into technical roadmaps, define implementation plans, decompose complex initiatives into actionable workstreams, and lead execution by delegating work across support engineers through successful project delivery.",
+      "Engineered and delivered customer-specific PTC Windchill customizations—including workflows, soft types, OIRs, lifecycle templates, and configuration-driven business rules—to align enterprise PLM processes with customer requirements, streamline engineering workflows, and improve operational efficiency.",
+      "Owned the end-to-end architecture, implementation, and production delivery of automated Windchill CI/CD pipelines using Jenkins and Nexus, automating build, artifact management, and deployment processes. Standardized and successfully deployed the solution across four enterprise customer implementations, improving release efficiency, deployment consistency, and end-to-end release traceability.",
+      "Developed Python and SQL automation for ETVL (Extract, Transform, Validate, and Load) activities supporting enterprise PLM migrations to PTC Windchill, while leveraging and extending out-of-the-box data loaders with custom loading capabilities to streamline migration workflows, improve data quality, and reduce dataset evaluation time from hours to minutes (~95%).",
+      "Designed and delivered internal automation platforms and business-critical integrations that transformed operational workflows, enabling real-time data visibility, compliance monitoring, and executive reporting. Automated cross-system validation and reporting processes, replacing manual weekend audits with continuous daily visibility. Eliminated recurring third-party subscription costs, reduced redundant cross-system updates by ~2 hours per employee per week, and saved management an additional ~2 hours weekly in report consolidation and decision support.",
+      "Installed, configured, and supported enterprise PTC Windchill environments, performing CPS upgrades, rehosting, Remote File Server configuration, and CAD worker integration (Creo, SolidWorks, Inventor, and Document Worker), while diagnosing and resolving complex platform issues.",
     ],
     tags: ["Windchill", "Python", "Jenkins", "Nexus", "CI/CD", "SQL", "Data Migration"],
   },
@@ -214,14 +210,6 @@ company: "Freelance",
     ],
     tags: ["Python", "Integration", "Automation", "Excel"],
   },
-];
-
-export const highlights: string[] = [
-  "End-to-end product lifecycle: from requirements gathering and solution design to implementation, deployment, operational support, and continuous improvement",
-  "System integration, data migration, environment management, and release processes for enterprise software",
-  "CI/CD pipelines with Jenkins and Nexus, plus custom automation tooling",
-  "Stakeholder collaboration — understanding business objectives and championing technical delivery",
-  "Interest in enterprise architecture, platform engineering, DevOps, AI-driven automation, and large-scale system integration",
 ];
 
 export const badges = [
