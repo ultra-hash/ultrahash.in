@@ -6,7 +6,6 @@ import {
   featuredProjects,
   otherProjects,
   experience,
-  highlights,
   social,
 } from "@/lib/data";
 
@@ -20,8 +19,7 @@ export default function Home() {
           <p className="intro">
             I&apos;m <b>Veerabhadra Swamy</b>, an engineer focused on designing,
             automating, integrating, deploying, and operating enterprise
-            systems — from PLM and enterprise software to CI/CD, automation,
-            and full-stack development. 👨‍💻
+            systems. 👨‍💻
           </p>
           <p className="getintouch">
             Get in touch 👉{" "}
@@ -39,26 +37,14 @@ export default function Home() {
           <h3 className="section-title">BACKGROUND</h3>
           <div className="section-content">
             <p>
-              I enjoy solving complex technical and business challenges by
-              designing, automating, integrating, deploying, and operating
-              enterprise systems.
-            </p>
-            <p>
-              My experience spans Product Lifecycle Management (PLM), enterprise
+              I enjoy solving complex technical and business challenges. My
+              experience spans Product Lifecycle Management (PLM), enterprise
               software implementations, automation, system integration, CI/CD,
-              infrastructure, and software development. I have contributed
-              across the full solution lifecycle—from requirements gathering and
-              solution design to implementation, deployment, operational
-              support, and continuous improvement.
+              infrastructure, and software development — delivered across the
+              full solution lifecycle, from requirements gathering and solution
+              design to implementation, deployment, operational support, and
+              continuous improvement.
             </p>
-            <p>
-              <span className="bold-word">A few things I focus on:</span>
-            </p>
-            <ul className="highlight-list">
-              {highlights.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
             <p>
               I don&apos;t assume a problem is difficult because it is
               unfamiliar. I start by{" "}
@@ -87,7 +73,9 @@ export default function Home() {
                 {item.location && (
                   <p className="experience-location">{item.location}</p>
                 )}
-                <p className="experience-desc">{item.description}</p>
+                {item.description && (
+                  <p className="experience-desc">{item.description}</p>
+                )}
                 <ul className="experience-list">
                   {item.points.map((point) => (
                     <li key={point}>{point}</li>
