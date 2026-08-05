@@ -384,3 +384,44 @@ html.dark .featured-project-image {
   gap: 20px;
   font-size: 1.4rem;
 }
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 640px) {
+  #hero {
+    padding: 16px;
+  }
+
+  .hero-content {
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .hello {
+    font-size: 1.8rem;
+  }
+
+  .intro {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .getintouch {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 32px 16px;
+  }
+
+  #footer {
+    padding: 32px 16px;
+  }
+
+  .section-title {
+    font-size: 0.9rem;
+  }
+
+  .skills-list li {
+    font-size: 0.8rem;
+  }
+}
